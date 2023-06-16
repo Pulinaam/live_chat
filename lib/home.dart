@@ -6,32 +6,29 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFBCDB8F9),
-      body: CustomPaint(
-        painter: MyShape(),
-        child: Container(
-          
-          margin: EdgeInsets.all(100.0),
-          decoration: BoxDecoration(
-             shape: BoxShape.circle,
-             gradient: new LinearGradient(
-
-                  // begin: Alignment.topCenter,
-                  // end: Alignment.bottomCenter,
-                   colors: [
-                    Color(0xFFBD9D9D9).withOpacity(0.9),
-                    Color(0xFFBD9D9D9).withOpacity(0.3),
-                  ],
-            // color: Colors.orange,
-            
+        backgroundColor: const Color(0xFFBCDB8F9),
+        body: CustomPaint(
+          painter: MyShape(),
+          child: Padding(
+            padding: const EdgeInsets.only(
+                left: 150, top: 1, bottom: 400, right: 100),
+            child: Container(
+                alignment: FractionalOffset.center,
+                transform: new Matrix4.identity()
+                  ..rotateZ(35 * 3.1415927 / 180),
+                //margin: const EdgeInsets.only(left: 100.0, right: 100.0),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: LinearGradient(
+                    colors: [
+                      const Color(0xFFBD9D9D9).withOpacity(0.7),
+                      const Color(0xFFBD9D9D9).withOpacity(0.001),
+                    ],
+                    // color: Colors.orange,
+                  ),
+                )),
           ),
-        )
-          
-        ),
-      )
-      );
-      
-    
+        ));
   }
 }
 
