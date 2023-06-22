@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              left: 300,
+              left: 305,
               top: 50,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -52,25 +52,63 @@ class HomeScreen extends StatelessWidget {
                 child: const Text('Skip'),
               ),
             ),
+            Positioned(
+              left: 50,
+              top: 140,
+              child: Image.asset(
+                'asset/vector1.png',
+                width: 25,
+                height: 25,
+              ),
+            ),
+            
+            Positioned(
+              left: 65,
+              top: 140,
+              child: Image.asset(
+                'asset/vector1.png',
+                width: 25,
+                height: 25,
+              ),
+            ),
             const Positioned(
               left: 83,
-              top: 160,
+              top: 155,
               child : Text(
                 'Looking for fun',
                 style: TextStyle(color: Colors.white, fontSize: 37),
               ),
               height: 400,
 
+
             ),
-            //  Positioned(
-            //   left: 83,
-            //   top: 165,
-            //   child: Image.asset(
-            //     'asset/line9.png',
-            //     width: 70,
-            //     height: 200,
-            //   ),
-            // ),
+             Positioned(
+              left: 85,
+              top: 113,
+              child: Image.asset(
+                'asset/line.png',
+                width: 247,
+                height: 200,
+              ),
+            ),
+           Positioned(
+              left: 335,
+              top: 212,
+              child: Image.asset(
+                'asset/vector.png',
+                width: 25,
+                height: 25,
+              ),
+            ),
+            Positioned(
+              left: 350,
+              top: 212,
+              child: Image.asset(
+                'asset/vector.png',
+                width: 25,
+                height: 25,
+              ),
+            ),
             Positioned(
               left: 1,
               top: 260,
@@ -89,6 +127,34 @@ class HomeScreen extends StatelessWidget {
                 'asset/girl.png',
                 width: 460,
                 height: 520,
+              ),
+            ),
+            Positioned(
+              left: 12,
+              top: 570,
+              right: 10,
+              child: Image.asset(
+                'asset/vector2.png',
+                width: 60,
+                height: 60,
+              ),
+            ),
+            Positioned(
+              left: 190,
+              top: 877,
+              child: Image.asset(
+                'asset/ellipse1.png',
+                width: 16,
+                height: 16,
+              ),
+            ),
+            Positioned(
+              left: 50,
+              top: 710,
+              child: Image.asset(
+                'asset/ellipse2.png',
+                width: 350,
+                height: 350,
               ),
             ),
           ],
